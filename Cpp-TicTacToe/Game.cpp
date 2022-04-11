@@ -9,30 +9,8 @@ Game::Game()
 void Game::enterGameMode()
 {
 	
-	/*std::cout << "Enter game mode: \n1: play player vs player.\n2: player vs random bot.\n3: player vs AI." << std::endl;
-	std::cout << "-> ";
-	string commend;
-	std::cin >> commend;
-	if (!board->isd(commend)) {
-		enterGameMode();
-	}
-
-	int mode = std::stoi(commend);
-	if (PlayerVsPlayer == mode) {
-		enterPlayersNames();
-	}
-	else if (PlayerVsRandom == mode) {
-		enterPlayerName();
-	}
-	else if (PlayerVsAI == mode) {
-
-	}
-	else {
-		enterGameMode();
-	}*/
-
+	
 	enterPlayersNames();
-	std::cout << "-> ";
 }
 
 void Game::enterPlayersNames()
@@ -54,7 +32,6 @@ void Game::freePlayerMemory()
 	delete player1;
 	delete player2;
 	delete board;
-	//delete currentPlayer; //crushing the program dont know whay...
 }
 
 void Game::printGame()
